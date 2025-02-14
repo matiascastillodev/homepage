@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+  font-weight: 100;
+}
+
+.about,
+.work,
+.contact {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.about-container {
+  background: linear-gradient(170deg, #418fae 70%, #ffffff 30%);
+}
+
+.contact-container {
+  background-color: #418fae;
+}
+
+.about {
+  display: flex;
+  padding: 50px;
+  align-items: center;
+}
+
+.imgContainer {
+  position: relative;
+}
+
+.aboutImage {
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.aboutName {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.aboutCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+  height: 300px;
+  background-color: #ffffff;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+}
+.aboutInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cardSocials {
+  display: flex;
+  gap: 20px;
+  align-self: flex-end;
+}
+
+.work {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  background-color: brown;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px 50px;
+  gap: 10px;
+}
+
+.card-info > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-info > p {
+  line-height: 1;
+  color: #808080;
+  font-size: 0.9rem;
+}
+
+.card-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact {
+  display: flex;
+  padding: 50px;
+  gap: 50px;
+  color: #ffffff;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.iconInfo {
+  display: flex;
+  gap: 10px;
+}
+
+i {
+  font-size: 1.5rem;
+  color: #000000;
+  cursor: pointer;
+}
+
+.phone,
+.mail,
+.openInNew {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.phone {
+  background-image: url(images/call_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg);
+}
+
+.mail {
+  background-image: url(images/mail_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg);
+}
+
+.openInNew {
+  background-image: url(images/open_in_new_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg);
+}
+
+.contactImage {
+  object-fit: cover;
+  object-position: 75% 25%;
+  width: 900px;
+  height: 400px;
+}
