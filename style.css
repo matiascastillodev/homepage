@@ -30,43 +30,37 @@ h3 {
 }
 
 .about {
-  display: flex;
   padding: 50px;
   align-items: center;
-}
-
-.imgContainer {
-  position: relative;
+  display: flex;
 }
 
 .aboutImage {
-  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
   width: 350px;
   height: 400px;
   object-fit: cover;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
 .aboutName {
+  display: none;
   position: absolute;
   top: 90%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+  text-shadow: 1px 1px 0px #000000;
+  font-size: 2.5rem;
+  z-index: 3;
 }
 
-.aboutCard {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 30px;
-  height: 300px;
-  background-color: #ffffff;
-  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
-}
 .aboutInfo {
+  padding: 40px;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  background-color: #ffffff;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
 .cardSocials {
@@ -144,6 +138,13 @@ h3 {
   gap: 10px;
 }
 
+.contactImage {
+  object-fit: cover;
+  object-position: 75% 25%;
+  width: 900px;
+  height: 400px;
+}
+
 i {
   font-size: 1.5rem;
   color: #000000;
@@ -172,9 +173,129 @@ i {
   background-image: url(images/open_in_new_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg);
 }
 
-.contactImage {
-  object-fit: cover;
-  object-position: 75% 25%;
-  width: 900px;
-  height: 400px;
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .about,
+  .work,
+  .contact {
+    padding: 50px 80px;
+  }
+
+  .aboutImage {
+    display: none;
+  }
+
+  .aboutName {
+    display: none;
+  }
+
+  .cardSocials {
+    display: none;
+  }
+
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 50px;
+  }
+
+  .contactImage {
+    width: 300px;
+  }
+
+  .contact i,
+  .cardSocials i {
+    font-size: 2rem;
+  }
+
+  .mobcenter {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 425px) {
+  .about,
+  .work {
+    padding: 20px;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  .about-container {
+    background: linear-gradient(150deg, #418fae 50%, #ffffff 50%);
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .aboutImage {
+    display: none;
+  }
+
+  .aboutName {
+    display: none;
+  }
+
+  .aboutInfo {
+    background-color: transparent;
+    box-shadow: none;
+    height: auto;
+    gap: 20px;
+    padding: 0;
+  }
+
+  .cardSocials {
+    display: flex;
+    align-self: center;
+    gap: 40px;
+  }
+
+  .contact {
+    padding: 0;
+  }
+  .card-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .contact {
+    flex-direction: column;
+  }
+
+  .contactInfo {
+    padding: 20px;
+  }
+
+  .mobzoom {
+    font-size: 1.5rem;
+  }
+
+  .iconInfo > div {
+    display: none;
+  }
+
+  .mobcenter {
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .contact i,
+  .cardSocials i {
+    font-size: 2.5rem;
+  }
+
+  .contactImage {
+    width: 100vw;
+    height: 500px;
+  }
 }
