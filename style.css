@@ -35,6 +35,10 @@ h3 {
   display: flex;
 }
 
+.imageContainer {
+  position: relative;
+}
+
 .aboutImage {
   width: 350px;
   height: 400px;
@@ -43,7 +47,6 @@ h3 {
 }
 
 .aboutName {
-  display: none;
   position: absolute;
   top: 90%;
   left: 50%;
@@ -189,11 +192,11 @@ i {
   }
 
   .aboutImage {
-    display: none;
+    /* display: none; */
   }
 
   .aboutName {
-    display: none;
+    /* display: none; */
   }
 
   .cardSocials {
@@ -240,11 +243,12 @@ i {
   }
 
   .aboutImage {
-    display: none;
+    width: 300px;
+    height: 500px;
   }
 
   .aboutName {
-    display: none;
+    white-space: nowrap;
   }
 
   .aboutInfo {
