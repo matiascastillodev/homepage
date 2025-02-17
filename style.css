@@ -14,6 +14,10 @@ h3 {
   font-weight: 100;
 }
 
+h1 {
+  font-size: 2.5rem;
+}
+
 .about,
 .work,
 .contact {
@@ -53,8 +57,7 @@ h3 {
   transform: translate(-50%, -50%);
   color: white;
   text-shadow: 1px 1px 0px #000000;
-  font-size: 2.5rem;
-  z-index: 3;
+  white-space: nowrap;
 }
 
 .aboutInfo {
@@ -195,10 +198,6 @@ i {
     /* display: none; */
   }
 
-  .aboutName {
-    /* display: none; */
-  }
-
   .cardSocials {
     display: none;
   }
@@ -243,12 +242,8 @@ i {
   }
 
   .aboutImage {
-    width: 300px;
+    width: 80vw;
     height: 500px;
-  }
-
-  .aboutName {
-    white-space: nowrap;
   }
 
   .aboutInfo {
