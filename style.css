@@ -194,8 +194,8 @@ i {
     padding: 50px 80px;
   }
 
-  .aboutImage {
-    /* display: none; */
+  .about {
+    flex-direction: column;
   }
 
   .cardSocials {
@@ -234,11 +234,6 @@ i {
 
   .about-container {
     background: linear-gradient(150deg, #418fae 50%, #ffffff 50%);
-  }
-
-  .about {
-    display: flex;
-    flex-direction: column;
   }
 
   .aboutImage {
